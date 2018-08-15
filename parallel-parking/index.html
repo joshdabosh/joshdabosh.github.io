@@ -2,14 +2,28 @@
 <head>
     <title>AI Parking</title>
     <meta charset="utf-8" />
-</head>
-<body>
-    <canvas id="canvas" width="400" height="300">Sorry, your browser doesn't support HTML5 Canvas. Perhaps upgrade it?</canvas>
-    <script>
+    <script type="text/javascript">
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
-        ctx.fillStyle = "#FF0000";
-        ctx.fillRect(20,20,150,75);
+        
+        (function(){
+            init()
+
+            function init() {
+                window.addEventListener('resize', resize, false);
+                resize();
+            }
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+        })();
     </script>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="300" style="border: 1px solid black;">
+        Sorry, your browser doesn't support HTML5 Canvas. Perhaps upgrade it?
+    </canvas>
 </body>
 </html>
