@@ -8,6 +8,7 @@ body{
     pointer-events:none;
     z-index:-1;
     overflow: auto;
+    font-family: "Arial", "Sans-Serif";
 }
 
 .content{
@@ -16,17 +17,26 @@ body{
     padding-right: 10%;
 }
 
-.inner-content{
-    min-height:90%;
-    background-color:rgba(255,255,255,0.9);
+.content > *{
+    margin-top:5%;
+    margin-bottom:5%;
+    background-color:rgba(240,248,255,0.9);
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-bottom:2.5%;
+    overflow-y: auto;
 }
 
-.info, .projects{
-    overflow-y: auto;
-    margin-top:5%;
-    margin-left:10%;
-    margin-right:10%;
-    margin-bottom: 10%;
+.content > *:start{
+    margin-top:0px;
+    padding-top:0px;
+}
+
+.content > *:end{
+    margin-bottom:0px;
+    padding-top:0px;
 }
 
 .form-upload{
@@ -42,4 +52,26 @@ body{
     height: 40px;
     width: 120px;
     font: bold 15px arial, sans-serif;
+}
+
+.project {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    border: 6px solid deepskyblue;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.info {
+    font-size:1.5em;
+    text-align:center;
+}
+
+.topic-title {
+    font-size: 2em;
+}
+
+.filler-space{
+    background-color: rgba(255,255,255,0);
 }
