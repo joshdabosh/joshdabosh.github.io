@@ -7,6 +7,7 @@ body{
     position: absolute;
     pointer-events:none;
     z-index:-1;
+    overflow: auto;
 }
 
 .content{
@@ -17,11 +18,11 @@ body{
 
 .inner-content{
     min-height:90%;
-    background-color:rgba(76,81,109,0.9);
+    background-color:rgba(255,255,255,0.9);
 }
 
-.uploads{
-    overflow:auto;
+.info, .projects{
+    overflow-y: auto;
     margin-top:5%;
     margin-left:10%;
     margin-right:10%;
