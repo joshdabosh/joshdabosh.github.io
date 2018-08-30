@@ -1,127 +1,80 @@
+@font-face{
+    font-family: "Quicksand";
+    src: url("fonts/Quicksand-Regular.ttf");
+    src: url("fonts/Quicksand-Regular.otf") format("otf");
+}
+
 body{
-    background: url("../img/anime1.png") no-repeat 0px 0px;
-    background-size: cover;
-    background-attachment: fixed;
+    font-family: "Quicksand", "Arial", "Sans-Serif";
+    font-weight: normal;
+    font-style: normal;
     position: absolute;
-    overflow: auto;
-    font-family: "Arial", "Sans-Serif";
-    pointer-events:none;
+    top: 50%;
+    left: 50%;
+    margin:-90px 0 0 -90px;
 }
 
-.box{
-    background-color:rgba(240,248,255,0.9);
-    
-    border: 1.5px solid blue;
-    border-radius: 8px;
-    
-    padding-top: 2.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2.5%;
+.arrow{
+    display:inline-block;
+    margin-left:10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8.66px;
+    border-color: transparent transparent transparent #bbc1c7;
 }
 
-.content{
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+ul{
+    width:auto
+    margin:0;
+    padding:0;
+    list-style: none;
+    width: 50px;
 }
 
-.main{
-    margin-top:30px;
+ul li {
+    position:relative;
 }
 
-.link{
-    pointer-events:auto;
+li ul {
+    position:absolute;
+    left:135px;
+    top:0;
+    display:none;
+    border-bottom: 0px;
 }
 
-.proj-name{
-    padding-top:2%;
+ul li a{
+    width:auto;
+    display:block;
+    text-decoration:none;
+    color:#777;
+    background:#fff;
+    padding: 0px;
+    border-bottom:0;
+    text-align:left;
+    transition: 1s;
 }
 
-.project{
-    /*display: inline-block;*/
-    /*max-width:350px;*/
-    margin-top:2%;
-    margin-left:2%;
-    padding-left:2.5%;
-    padding-bottom:2.5%;
-    border-left: 2px solid rgba(150,150,150,0.8);
-    border-bottom: 2px solid rgba(150,150,150,0.8);
+ul li a:hover{
+    color: #ffdead;
 }
 
-.title{
-    text-align: center;
+ul li a.hovertext:after{
+    content:"";
 }
 
-.topic-title{
-    padding-bottom: 3%;
-    border-bottom: 2px solid rgba(150,150,150,0.8);
-}
-
-.filler-line{
-}
-
-/*
-
-.content > *{
-    background-color:rgba(240,248,255,0.9);
-    border: 1.5px solid blue;
-    border-radius: 10px;
-    padding-left: 5%;
-    padding-right:5%;
-    padding-bottom:2.5%;
-    overflow-y: auto;
-}
-
-
-.start{
-    margin-top:0px;
-    margin-bottom:35px;
-    padding-top:0px;
-}
-
-.end{
-    margin-top:0px;
-    margin-bottom:0px;
-    padding-top:0px;
-}
-
-.form-upload{
-    color:white;
-}
-
-.form-submit {
-    background: #6666ff;
-    color: white;
-    border-style:none;
-    border-color: #6666ff;
-    border-left: 6px solid #0000cc;
-    height: 40px;
-    width: 120px;
-    font: bold 15px arial, sans-serif;
-}
-
-.project {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-    border: 6px solid deepskyblue;
-    border-radius: 5px;
-    background-color: aliceblue;
-    z-index: 999;
-}
-
-.info {
-    font-size:1.5em;
+ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    width:auto;
     text-align:center;
 }
 
-.topic-title {
-    font-size: 2em;
-}
+li:hover ul {display:block;}
 
-.filler-space{
-    background-color: rgba(255,255,255,0);
-}
-*/
+li:hover ul, li.over ul { display: block; }
 
+* html ul li {float: left;}
+* html ul li a {height: 1%;}
