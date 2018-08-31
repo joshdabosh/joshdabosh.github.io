@@ -1,4 +1,4 @@
-/*eslint-env browser*/
+/*eslint-env browser
 function start() {
     "use strict";
     if (document.getElementById) {
@@ -10,7 +10,7 @@ function start() {
         
         document.getElementById("about-inner").style.left = String(toWidth);*/
         
-        /* make dropdown work */
+        /* make dropdown work
         var navRoot = el_About;
         for (var i=0; i<navRoot.childNodes.length; i++) {
             var node = navRoot.childNodes[i];
@@ -26,3 +26,4 @@ function start() {
     }
 }
 window.onload=start;
+*/
