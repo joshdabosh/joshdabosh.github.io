@@ -1,7 +1,7 @@
 @font-face{
     font-family: "Quicksand";
-    src: url("fonts/Quicksand-Regular.ttf");
-    src: url("fonts/Quicksand-Regular.otf") format("otf");
+    src: url("../fonts/Quicksand-Regular.ttf");
+    src: url("../fonts/Quicksand-Regular.otf") format("otf");
 }
 
 body{
@@ -22,7 +22,7 @@ body{
     height: 0;
     border-style: solid;
     border-width: 5px 0 5px 8.66px;
-    border-color: transparent transparent transparent #bbc1c7;
+    border-color: transparent transparent transparent #a9a9a9;
     opacity:0;
     transition: all 0.5s ease;
 }
@@ -61,12 +61,12 @@ li ul {
     width:auto;
     display:block;
     text-decoration:none;
-    color:#777;
+    color:#000;
     background:#fff;
     padding: 0px;
     border-bottom:0;
     text-align:left;
-    transition: all 0.5s ease;
+    transition: color 0.25s ease-in;
 }
 
 #about-inner a:hover{

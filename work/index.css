@@ -3,7 +3,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
-    overflow: auto;
+    overflow: hidden;
     font-family: "Arial", "Sans-Serif";
     pointer-events:none;
 }

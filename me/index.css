@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Regular.ttf");
+    src: url("../fonts/Quicksand-Regular.otf") format("otf");
+}
+
+body{
+    font-family: "Quicksand", "Arial", "Sans-Serif";
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    text-align: center;
+}
