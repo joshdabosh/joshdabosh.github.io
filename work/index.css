@@ -1,9 +1,19 @@
+@font-face{
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Regular.eot");
+    src: url("../fonts/Quicksand-Regular.ttf") format("truetype"),
+        url("../fonts/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Quicksand-Regular.woff") format("woff"),
+        url("../fonts/Quicksand-Regular.woff2") format("woff2"),
+        url("../fonts/Quicksand-Regular.svg#svgFontName") format("svg");
+}
+
 body{
+    font-family: "Quicksand", "Sans-Serif";
     background: url("../img/anime1.png") no-repeat 0px 0px;
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
-    font-family: "Arial", "Sans-Serif";
     pointer-events:none;
 }
 
