@@ -8,8 +8,19 @@ body{
     font-family: "Quicksand", "Arial", "Sans-Serif";
     font-weight: normal;
     font-style: normal;
+    pointer-events:none;
 }
 
 header{
     text-align: center;
+}
+
+.link{
+    pointer-events:auto;
+    color:black;
+}
+
+.content{
+    padding-left: 20%;
+    padding-right: 20%;
 }

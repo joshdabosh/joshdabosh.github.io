@@ -4,6 +4,10 @@
     src: url("../fonts/Quicksand-Regular.otf") format("otf");
 }
 
+.name{
+    pointer-events:none;
+}
+
 body{
     font-family: "Quicksand", "Arial", "Sans-Serif";
     font-weight: normal;
@@ -28,7 +32,7 @@ body{
 }
 
 ul{
-    width:auto
+    width:auto;
     margin:0;
     padding:0;
     list-style: none;
