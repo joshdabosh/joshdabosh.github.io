@@ -9,6 +9,8 @@ function resize() {
         document.getElementById("github-projs").style.width = "50%";
     }
     
+    document.getElementById("competitions").style.width = comWidth+"px";
+    
 }
 
 window.onload=resize();

@@ -47,6 +47,7 @@ body{
 
 .link{
     pointer-events:auto;
+    color:black;
 }
 
 .proj-name{
@@ -71,17 +72,28 @@ body{
     border-bottom: 2px solid rgba(150,150,150,0.8);
 }
 
-/* Individual box stylings */
+.right{
+    float:right;
+}
 
-#github-projs{
+.left{
     float:left;
 }
 
+/* Individual box stylings */
+
+.github-projs{ }
+
 #com-contribs{
-    max-width: 28%;
+    max-width:28%;
     min-width: 150px;
     vertical-align: top;
-    float:right;
+}
+
+#competitions{
+    max-width:28%;
+    min-width: 150px;
+    vertical-align: top;
 }
 
 /* Site footer */
