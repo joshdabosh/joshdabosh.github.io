@@ -51,6 +51,13 @@ ul li:hover .arrow{
     opacity:1;
 }
 
+#about{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    height:auto;
+}
+
 #about-inner:hover a{
     opacity:1;
 }
