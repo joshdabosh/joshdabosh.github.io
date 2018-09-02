@@ -11,13 +11,13 @@
 body{
     font-family: "Quicksand", "Sans-Serif";
     background: url("../img/anime1.png") no-repeat 0px 0px;
-    height:100%;
     background-size: cover;
     background-attachment: fixed;
-    position: absolute;
     pointer-events:none;
+    overflow-x: hidden;
 }
 
+/* Generic styling rules */
 .box{
     background-color:rgba(240,248,255,0.9);
     
@@ -31,13 +31,18 @@ body{
 }
 
 .content{
+    position:absolute;
+    top:0;
+    right:0;
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    border: 2px solid red;
 }
 
 .main{
     margin-top:30px;
+    display: inline-block;
 }
 
 .link{
@@ -49,8 +54,6 @@ body{
 }
 
 .project{
-    /*display: inline-block;*/
-    /*max-width:350px;*/
     margin-top:2%;
     margin-left:2%;
     padding-left:2.5%;
@@ -67,3 +70,40 @@ body{
     padding-bottom: 3%;
     border-bottom: 2px solid rgba(150,150,150,0.8);
 }
+
+/* Individual box stylings */
+
+#github-projs{
+    float:left;
+}
+
+#com-contribs{
+    max-width: 28%;
+    min-width: 150px;
+    vertical-align: top;
+    float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
