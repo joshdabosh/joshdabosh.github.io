@@ -16,26 +16,24 @@ function resize() {
         
         document.getElementById("competitions").style.float = "right";
         document.getElementById("com-contribs").style.float = "right";
-    } else if (baseWidth <= 664 && baseWidth > 493){
+    } else if (baseWidth <= 664 && baseWidth >= 494){
         console.log("it's the middle");
         // 1 top 2 bottom display
         document.getElementById("github-projs").style.maxWidth = "100%";
         
-        document.getElementById("com-contribs").style.width = "28%";
+        document.getElementById("com-contribs").style.maxWidth = "28%";
         document.getElementById("com-contribs").style.float = "left";
         
-        document.getElementById("competitions").style.width = "28%";
+        document.getElementById("competitions").style.maxWidth = "28%";
         document.getElementById("competitions").style.float = "right";
-    } else if (baseWidth <= 493){
-        console.log("less than 493")
+    } else if (baseWidth < 494){
+        console.log("less than 493");
         document.getElementById("github-projs").style.maxWidth = "100%";
         
-        var w = parseInt(document.getElementById("github-projs").getBoundingClientRect().width, 10);
-        
-        document.getElementById("competitions").style.width = "100%";
+        document.getElementById("competitions").style.maxWidth = "100%";
         document.getElementById("competitions").style.float = "left";
         
-        document.getElementById("com-contribs").style.width = "100%";
+        document.getElementById("com-contribs").style.maxWidth = "100%";
         document.getElementById("com-contribs").style.float = "left";
     }
     /*
