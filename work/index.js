@@ -1,9 +1,7 @@
 /*eslint-env browser*/
 function resize() {
     "use strict";
-    var comWidth = parseInt(document.getElementById("com-contribs").getBoundingClientRect().width, 10),
-        projWidth = parseInt(document.getElementById("github-projs").getBoundingClientRect().width, 10),
-        baseWidth = window.innerWidth;
+    var baseWidth = window.innerWidth;
     
     //console.log("com width: "+comWidth);
     //console.log("base width: "+baseWidth);
