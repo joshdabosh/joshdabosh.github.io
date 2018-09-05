@@ -71,7 +71,7 @@ ul {
 	padding: 0px;
 	border-bottom:0;
 	text-align:left;
-	transition: color 0.25s ease-in;
+	transition: color 0.175s ease-in;
 }
 
 #about-inner a:hover{ color: #ffdead; }
