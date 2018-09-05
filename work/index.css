@@ -1,3 +1,4 @@
+/* Font: Quicksand */
 @font-face{
     font-family: "Quicksand";
     src: url("../fonts/Quicksand-Regular.eot");
@@ -8,13 +9,16 @@
         url("../fonts/Quicksand-Regular.svg#svgFontName") format("svg");
 }
 
+/* Some body styling */
 body{
+    --webkit-font-smoothing: antialiased;
     font-family: "Quicksand", "Sans-Serif";
     background: url("../img/anime1.png") no-repeat 0px 0px;
     background-size: cover;
     background-attachment: fixed;
     pointer-events:none;
     overflow-x: hidden;
+    height:100%;
 }
 
 /* Generic styling rules */
@@ -28,21 +32,6 @@ body{
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2.5%;
-}
-
-.content{
-    position:absolute;
-    top:0;
-    right:0;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
-}
-
-.main{
-    margin-top:30px;
-    display: inline-block;
 }
 
 .link{
@@ -63,10 +52,6 @@ body{
     border-bottom: 2px solid rgba(150,150,150,0.8);
 }
 
-.title{
-    text-align: center;
-}
-
 .topic-title{
     padding-bottom: 3%;
     border-bottom: 2px solid rgba(150,150,150,0.8);
@@ -80,7 +65,26 @@ body{
     float:left;
 }
 
-/* Individual box stylings */
+/* Individual element stylings */
+.content{
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 100%;
+}
+
+.main{
+    margin-top:30px;
+    display: inline-block;
+}
+
+.title{
+    line-height: 0.7;
+    text-align: center;
+}
 
 #github-projs{
     max-width:50%;
@@ -98,9 +102,13 @@ body{
     vertical-align: top;
 }
 
-
-
-
+.site-footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background:white;
+}
 
 
 

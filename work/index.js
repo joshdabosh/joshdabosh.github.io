@@ -1,7 +1,10 @@
 /*eslint-env browser*/
 function resize() {
     "use strict";
-    var baseWidth = window.innerWidth;
+    var baseWidth = window.innerWidth,
+        footerHeight = parseInt(document.getElementById("footer").getBoundingClientRect().height, 10);
+    
+    document.getElementById("content").style.paddingBottom = (footerHeight+10)+"px";
     
     //console.log("com width: "+comWidth);
     //console.log("base width: "+baseWidth);
