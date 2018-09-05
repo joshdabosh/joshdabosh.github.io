@@ -27,6 +27,7 @@ body{
 	border-width: 5px 0 5px 8.66px;
 	border-color: transparent transparent transparent #a9a9a9;
 	opacity:0.5;
+    transform:rotate(0deg);
 	transition: all 0.5s ease;
 }
 
@@ -41,7 +42,7 @@ body{
 	position: relative;
 }
 
-#about:hover .arrow{ opacity:1; }
+#about:hover .arrow{ opacity:1; transform:rotate(90deg);}
 
 li ul {
 	display: block;

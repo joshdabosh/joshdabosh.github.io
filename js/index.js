@@ -4,14 +4,6 @@ function start() {
     if (document.getElementById) {
         var el_About = document.getElementById("about");
         
-        /*set width of certain elements
-        
-        var toWidth = parseInt(el_About.getBoundingClientRect.width, 10) - 1;
-        
-        document.getElementById("about-inner").style.left = String(toWidth);
-        
-        */
-        
         /* make dropdown work */
         var navRoot = el_About;
         for (var i=0; i<navRoot.childNodes.length; i++) {
