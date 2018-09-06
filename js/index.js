@@ -13,7 +13,7 @@ function start() {
         if (window.mobileAndTabletcheck()){
             // confirmed it IS a mobile device
             
-            var html = "<a class=\"link\" href=\"#\">self</a> | <a class=\"link\" href=\"../work/\">portfolio</a> | <a class=\"link\" href=\"../resume/resume.pdf\">resume</a>"
+            var html = "<a class=\"link\" href=\"self/\">self</a> | <a class=\"link\" href=\"../work/\">portfolio</a> | <a class=\"link\" href=\"../resume/resume.pdf\">resume</a>"
             
             // delete element
             var delement = document.getElementById("about-text");
