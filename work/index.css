@@ -105,11 +105,13 @@ body{
 .site-footer{
     position:absolute;
     bottom:0;
-    width:100%;
-    text-align: center;
+    width:100vw;
     background:white;
 }
 
+#footer-text{
+    margin-left:25%;
+}
 
 
 
