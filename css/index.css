@@ -17,6 +17,11 @@ body{
 
 .name{ pointer-events:none; }
 
+.link{
+    pointer-events:auto;
+    color:black;
+}
+
 /* Fancy selector thingy */
 .arrow{
 	display:inline-block;
