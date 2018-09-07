@@ -19,6 +19,7 @@ body{
     pointer-events:none;
     overflow-x: hidden;
     height:100%;
+    width:100%;
 }
 
 /* Generic styling rules */
@@ -105,12 +106,15 @@ body{
 .site-footer{
     position:absolute;
     bottom:0;
-    width:100vw;
+    width:89.5%;
     background:white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: white;
 }
 
 #footer-text{
-    margin-left:25%;
+    text-align:center;
 }
 
 
