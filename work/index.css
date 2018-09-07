@@ -1,12 +1,22 @@
 /* Font: Quicksand */
 @font-face{
-    font-family: "Quicksand";
-    src: url("../fonts/Quicksand-Regular.eot");
-    src: url("../fonts/Quicksand-Regular.ttf") format("truetype"),
-        url("../fonts/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Quicksand-Regular.woff") format("woff"),
-        url("../fonts/Quicksand-Regular.woff2") format("woff2"),
-        url("../fonts/Quicksand-Regular.svg#svgFontName") format("svg");
+	font-family: "Quicksand";
+	src: url("../fonts/regular/Quicksand-Regular.eot");
+	src: url("../fonts/regular/Quicksand-Regular.ttf") format("truetype"),
+        url("../fonts/regular/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/regular/Quicksand-Regular.woff") format("woff"),
+        url("../fonts/regular/Quicksand-Regular.woff2") format("woff2"),
+        url("../fonts/regular/Quicksand-Regular.svg#svgFontName") format("svg");
+}
+
+@font-face{
+	font-family: "QuicksandBold";
+	src: url("../fonts/bold/Quicksand-Bold.eot");
+	src: url("../fonts/bold/Quicksand-Bold.ttf") format("truetype"),
+        url("../fonts/bold/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/bold/Quicksand-Bold.woff") format("woff"),
+        url("../fonts/bold/Quicksand-Bold.woff2") format("woff2"),
+        url("../fonts/bold/Quicksand-Bold.svg#svgFontName") format("svg");
 }
 
 /* Some body styling */
@@ -56,6 +66,12 @@ body{
 .topic-title{
     padding-bottom: 3%;
     border-bottom: 2px solid rgba(150,150,150,0.8);
+}
+
+.bolded-text{
+    font-family: "QuicksandBold", "Sans-serif";
+    font-weight: normal;
+    font-style: normal;
 }
 
 .right{
