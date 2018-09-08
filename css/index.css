@@ -28,6 +28,7 @@ body{
 	top: 50%;
 	left: 50%;
 	margin:-90px 0 0 -90px;
+    pointer-events: auto;
 }
 
 .name{ pointer-events:none; }
