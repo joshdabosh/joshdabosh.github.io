@@ -19,14 +19,12 @@
         url("../fonts/bold/Quicksand-Bold.svg#svgFontName") format("svg");
 }
 
-
-
 body{
     --webkit-font-smoothing: antialiased;
     font-family: "Quicksand", "Sans-Serif";
     font-weight: normal;
     font-style: normal;
-    pointer-events:none;
+    pointer-events:auto;
 }
 
 header{
@@ -45,7 +43,6 @@ header{
     font-weight: normal;
     font-style: normal;
 }
-
 
 .content{
     margin-left: 20%;
