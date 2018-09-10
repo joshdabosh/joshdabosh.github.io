@@ -4,27 +4,31 @@
     <title>joshwang.me</title>
 	<meta charset="utf-8" />
     
-    <link rel="stylesheet" type="text/scss" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="shortcut icon" type="image/x-icon" href="icons/airplane.ico" />
 </head>
     
 <body>
-    <div class="content">
-        <h1 class="name">joshua wang</h1>
-        <ul id="about">
-            <li class="about-text" id="about-text">my
-                <div class="arrow"></div>
-                <ul id="about-inner">
-                    <li id="me"><a href="me/">self</a></li>
-                    <li id="work"><a href="work/">portfolio</a></li>
-                    <li id="resume"><a href="files/resume.pdf">resume</a></li>
-                </ul>
-            </li>
-        </ul>
+    <div class="container">
+        <div class="content">
+            <h1 class="name">joshua wang</h1>
+            <ul id="about">
+                <li class="about-text" id="about-text">my
+                    <div class="arrow"></div>
+                    <ul id="about-inner">
+                        <li id="me"><a href="me/">self</a></li>
+                        <li id="work"><a href="work/">portfolio</a></li>
+                        <li id="resume"><a href="files/resume.pdf">resume</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
     
-    <section class="rain-container" id="rain-container"></section>
+    <div class="rain front"></div>
+    <div class="rain back"></div>
     
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>

@@ -1,4 +1,8 @@
 /*eslint-env browser*/
+function start(){
+    console.log('ok');
+}
+
 function start() {
     "use strict";
     if (document.getElementById) {
@@ -7,6 +11,24 @@ function start() {
         /* RNG function */
         var randRange = function (mi, ma) {
             return (Math.floor(Math.random() * (ma - mi + 1)) + mi);
+        }
+        
+        var collision = function($div1, $div2) {
+            var x1 = $div1.offset().left;
+            var y1 = $div1.offset().top;
+            var h1 = $div1.outerHeight(true);
+            var w1 = $div1.outerWidth(true);
+            var b1 = y1 + h1;
+            var r1 = x1 + w1;
+            var x2 = $div2.offset().left;
+            var y2 = $div2.offset().top;
+            var h2 = $div2.outerHeight(true);
+            var w2 = $div2.outerWidth(true);
+            var b2 = y2 + h2;
+            var r2 = x2 + w2;
+
+            if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
+            return true;
         }
         
         var browserCheck = function () {
@@ -39,21 +61,27 @@ function start() {
         }
         
         /* Droplets */
-        var createRain = function() {
-            for (var i=0; i<101; i++){
-                var width = window.innerWidth,
-                    height = window.innerHeight,
-                    dropTop = (randRange(0, height)+50),
-                    dropLeft = (randRange(0, width)),
-                    dropOpacity = (randRange(0, 30)+30) * 0.01,
-                    dropDelay = (randRange(0,20)) - 1,
-                    drop = document.createElement("i");
+        
+        var rain = function(){
+            $(".rain").empty();
+            
+            var increment = 0,
+                drops = "",
+                backDrops = "",
+                count = 0;
+            
+            while (increment < 100) {
+                count += 1;
+                var rH = (Math.floor(Math.random() * (98-1+1)+1));
+                var rF = (Math.floor(Math.random() * (5-2+1)+2));
+                increment += rF;
+                drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (rF + rF - 1 + 100) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=drop'+count+'style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
                 
-                drop.setAttribute("class", "rain")
-                drop.setAttribute("id", "drop"+i)
-                
-                document.getElementById("rain-container").appendChild(drop);
+                backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (rF + rF - 1 + 100) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=backDrop'+count+'style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
             }
+            
+            $(".rain.front").append(drops);
+            $(".rain.back").append(backDrops);
         }
         
         /* make dropdown work */
@@ -82,7 +110,7 @@ function start() {
         
         ready(function(){
             browserCheck();
-            createRain();
+            rain();
             dropDown();
         });
     }
