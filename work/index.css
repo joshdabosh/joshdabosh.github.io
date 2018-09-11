@@ -50,6 +50,15 @@ body{
     color:black;
 }
 
+.navlink{
+    pointer-events:auto;
+    color:black;
+    transition: color 0.175s ease-in;
+}
+
+.navlink:hover{ color: #ffdead; }
+}
+
 .proj-name{
     padding-top:2%;
 }

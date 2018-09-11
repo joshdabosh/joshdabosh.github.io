@@ -36,6 +36,10 @@ header{
 .link{
     pointer-events:auto;
     color:black;
+    transition: color 0.175s ease-in;
+}
+
+.link:hover{ color: #ffdead; }
 }
 
 .bolded-text{

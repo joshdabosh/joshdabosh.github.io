@@ -116,6 +116,7 @@ body{
     }
 }
 
+/* Not used right now but probably will implement in the future, so I might as well keep it */
 .splat {
     display: block;
     width: 15px;
@@ -125,7 +126,6 @@ body{
     opacity: 1;
     transform: scale(0);
     animation: splat 0.5s linear infinite;
-    display: none;
 }
 
 @keyframes splat {
