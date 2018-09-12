@@ -54,12 +54,12 @@ function start() {
             
             while (increment < 100) {
                 count += 1;
-                var rH = (Math.floor(Math.random() * (98-1+1)+1));
-                var rF = (Math.floor(Math.random() * (5-2+1)+2));
+                var rH = (Math.floor(Math.random() * (98)+1));
+                var rF = (Math.floor(Math.random() * (4)+2));
                 increment += rF;
-                drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (rF + rF - 1 + 100) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=drop'+count+'style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
+                drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=drop'+count+' style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
                 
-                backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (rF + rF - 1 + 100) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=backDrop'+count+'style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
+                backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + (1.2*rH) + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=backDrop'+count+' style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
             }
             
             $(".rain.front").append(drops);

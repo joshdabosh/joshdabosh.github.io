@@ -28,8 +28,8 @@ body{
 	position: absolute;
     left:0;
     top:0;
-    width:100%;
-    height:100%;
+    width:100vw;
+    height:100vh;
     pointer-events: auto;
     overflow: hidden;
     text-align: center;
@@ -67,7 +67,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
-    color: black;
+    color: red;
 }
 
 .drop {
@@ -118,10 +118,10 @@ body{
 
 /* Not used right now but probably will implement in the future, so I might as well keep it */
 .splat {
-    display: block;
+    display: none;
     width: 15px;
     height: 10px;
-    border-top: 2px dotted rgba(0, 0, 0, 0.5);
+    border-top: 2px dotted rgba(0, 0, 0, 1);
     border-radius: 50%;
     opacity: 1;
     transform: scale(0);
