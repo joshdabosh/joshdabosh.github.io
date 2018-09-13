@@ -118,7 +118,7 @@ body{
 
 /* Not used right now but probably will implement in the future, so I might as well keep it */
 .splat {
-    display: none;
+    display: block;
     width: 15px;
     height: 10px;
     border-top: 2px dotted rgba(0, 0, 0, 1);
@@ -146,6 +146,7 @@ body{
         transform: scale(1.5);
     }
 }
+
 
 /* Fancy selector thingy */
 .arrow{

@@ -56,10 +56,33 @@ function start() {
                 count += 1;
                 var rH = (Math.floor(Math.random() * (98)+1));
                 var rF = (Math.floor(Math.random() * (4)+2));
-                increment += rF;
-                drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=drop'+count+' style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
                 
-                backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"><div class="stem" style="animation-delay: 0.' + (1.2*rH) + 's; animation-duration: 0.5' + rH + 's;"></div><div class="splat" id=backDrop'+count+' style="animation-delay: 0.' + rH + 's; animation-duration: 0.5' + rH + 's;"></div></div>';
+                var pos = $(".container").position();
+                
+                var maxW = $( window ).width(),
+                    maxH = $( window ).height(),
+                    boxLeft = pos.left,
+                    boxRight = $(".container").width() + boxLeft,
+                    boxTop = $(".container").position().top,
+                    winTop = 0,
+                    percLeft = (boxLeft/maxW)*100,
+                    percRight = (boxRight/maxW)*100;
+                
+                increment += rF;
+                /* currently broken
+                if (increment > percLeft && increment < percRight && delayTime > 0){
+                    console.log('ok');
+                    // the splash will be in contact with the box
+                    drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.' + rH + 's;"></div><div class="splat" id=drop'+count+' style="animation-delay: ' + delayTime + 's; animation-duration: 0.' + rH + 's; border: 2px solid red;"></div></div>';
+
+                    backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.' + rH + 's;"><div class="stem" style="animation-delay: 0.' + (1.2*rH) + 's; animation-duration: 0.' + rH + 's;"></div><div class="splat" id=backDrop'+count+' style="animation-delay: 0.' + delayTime + 's; animation-duration: 0.' + rH + 's; border: 2px solid red;"></div></div>';
+                /*} else {*/
+                    // the splash won't be in contact with the box so no need for it
+                drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.' + rH + 's;"><div class="stem" style="animation-delay: 0.' + rH + 's; animation-duration: 0.' + rH + 's;"></div></div>';
+
+                backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (rF + rF + 99) + '%; animation-delay: 0.' + rH + 's; animation-duration: 0.' + rH + 's;"><div class="stem" style="animation-delay: 0.' + (1.2*rH) + 's; animation-duration: 0.' + rH + 's;"></div></div>';
+                    
+                /*}*/
             }
             
             $(".rain.front").append(drops);
