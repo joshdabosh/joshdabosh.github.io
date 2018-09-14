@@ -32,7 +32,7 @@ body{
 	font-family: "Quicksand", "Sans-Serif";
 	font-weight: normal;
 	font-style: normal;
-	position: absolute;
+	position: fixed;
     left:0;
     top:0;
     width:100vw;
@@ -40,6 +40,7 @@ body{
     pointer-events: auto;
     overflow: hidden;
     text-align: center;
+	border: 2px solid red;
 }
 
 .letter{
