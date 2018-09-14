@@ -1,8 +1,4 @@
 /*eslint-env browser*/
-function start(){
-    console.log('ok');
-}
-
 function start() {
     "use strict";
     if (document.getElementById) {
@@ -110,7 +106,7 @@ function start() {
             $(".container").prepend(elem);
         }
         
-        /* make dropdown work */
+        /* backup dropdown thingy */
         var dropDown = function(){
             var navRoot = el_About;
             for (var i=0; i<navRoot.childNodes.length; i++) {
