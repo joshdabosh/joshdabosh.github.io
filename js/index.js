@@ -43,7 +43,6 @@ function start() {
         }
         
         /* Droplets */
-        
         var rain = function(){
             $(".rain").empty();
             
@@ -89,6 +88,28 @@ function start() {
             $(".rain.back").append(backDrops);
         }
         
+        /* Add the name */
+        var nameGen = function(){
+            var name = "joshua wang";
+            
+            var elem = '<div class="name"><h1>';
+            
+            for (var i = 0; i < name.length; i++){
+                var pos = i,
+                    character = name[pos];
+                
+                if (character == " "){
+                    elem += '<span class="letter-blank">'+character+'</span>';
+                } else {
+                    elem += '<span class="letter">'+character+'</span>';
+                }
+            }
+            
+            elem += "</h1></div>";
+            
+            $(".container").prepend(elem);
+        }
+        
         /* make dropdown work */
         var dropDown = function(){
             var navRoot = el_About;
@@ -114,6 +135,7 @@ function start() {
         }
         
         ready(function(){
+            nameGen();
             browserCheck();
             rain();
             dropDown();
