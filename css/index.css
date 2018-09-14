@@ -41,6 +41,7 @@ body{
     pointer-events: auto;
     overflow: hidden;
     text-align: center;
+	border: 2px solid red;
 }
 
 .letter{
