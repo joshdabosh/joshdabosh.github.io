@@ -27,21 +27,19 @@
 
 body{
     --webkit-font-smoothing: antialiased;
+	-webkit-transform: translateZ(0);
     text-rendering: optimizeLegibility;
 	font-family: "Quicksand", "Sans-Serif";
 	font-weight: normal;
 	font-style: normal;
 	position: absolute;
     left:0;
-	right:0;
-	bottom:0;
     top:0;
     width:100vw;
     height:100vh;
     pointer-events: auto;
     overflow: hidden;
     text-align: center;
-	border: 2px solid red;
 }
 
 .letter{
