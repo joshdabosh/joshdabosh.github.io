@@ -1,0 +1,77 @@
+@font-face{
+	font-family: "Quicksand";
+	src: url("../fonts/regular/Quicksand-Regular.eot");
+	src: url("../fonts/regular/Quicksand-Regular.ttf") format("truetype"),
+        url("../fonts/regular/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/regular/Quicksand-Regular.woff") format("woff"),
+        url("../fonts/regular/Quicksand-Regular.woff2") format("woff2"),
+        url("../fonts/regular/Quicksand-Regular.svg#svgFontName") format("svg");
+}
+
+@font-face{
+	font-family: "QuicksandBold";
+	src: url("../fonts/bold/Quicksand-Bold.eot");
+	src: url("../fonts/bold/Quicksand-Bold.ttf") format("truetype"),
+        url("../fonts/bold/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/bold/Quicksand-Bold.woff") format("woff"),
+        url("../fonts/bold/Quicksand-Bold.woff2") format("woff2"),
+        url("../fonts/bold/Quicksand-Bold.svg#svgFontName") format("svg");
+}
+
+.bolded-text{
+    font-family: "QuicksandBold", "Sans-serif";
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    --webkit-font-smoothing: antialiased;
+    font-family: "Quicksand", "Sans-Serif";
+    background: url("../img/galaxy.jpeg") no-repeat 0px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    pointer-events:none;
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+}
+
+.container{
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    
+    margin-bottom: 5%;
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.title > h1 {
+    font-size: 2.5em;
+}
+
+
+.box{
+    background-color:rgba(0, 0, 0, 0.7);
+    
+    border: 1.5px solid white;
+    border-radius: 8px;
+    
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
