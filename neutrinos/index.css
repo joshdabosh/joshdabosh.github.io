@@ -81,6 +81,10 @@ body{
     line-height: 2em;
 }
 
+.links > a{
+    color: white;
+}
+
 .content{
     margin-top: 2.5%;
 }
