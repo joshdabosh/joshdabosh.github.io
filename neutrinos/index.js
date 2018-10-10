@@ -8,7 +8,9 @@ function resize() {
     if (baseWidth > 990){
         // default state
         document.getElementById("content").style.maxWidth = "70%";
+        document.getElementById("content").style.width = "70%";
         document.getElementById("nav").style.maxWidth = "27%";
+        document.getElementById("nav").style.width = "27%";
         
         document.getElementById("nav-items").style.marginLeft = "0%";
         
@@ -18,7 +20,7 @@ function resize() {
         // minimized state
         document.getElementById("content").style.maxWidth = "100%";
         document.getElementById("content").style.width = "100%";
-        document.getElementById("content").style.border = "2px solid red";
+        
         document.getElementById("content").style.float = "left";
         
         document.getElementById("nav").style.maxWidth = "100%";
