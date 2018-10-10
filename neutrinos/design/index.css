@@ -1,21 +1,21 @@
 @font-face{
 	font-family: "Quicksand";
-	src: url("../fonts/regular/Quicksand-Regular.eot");
-	src: url("../fonts/regular/Quicksand-Regular.ttf") format("truetype"),
-        url("../fonts/regular/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/regular/Quicksand-Regular.woff") format("woff"),
-        url("../fonts/regular/Quicksand-Regular.woff2") format("woff2"),
-        url("../fonts/regular/Quicksand-Regular.svg#svgFontName") format("svg");
+	src: url("../../fonts/regular/Quicksand-Regular.eot");
+	src: url("../../fonts/regular/Quicksand-Regular.ttf") format("truetype"),
+        url("../../fonts/regular/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../../fonts/regular/Quicksand-Regular.woff") format("woff"),
+        url("../../fonts/regular/Quicksand-Regular.woff2") format("woff2"),
+        url("../../fonts/regular/Quicksand-Regular.svg#svgFontName") format("svg");
 }
 
 @font-face{
 	font-family: "QuicksandBold";
-	src: url("../fonts/bold/Quicksand-Bold.eot");
-	src: url("../fonts/bold/Quicksand-Bold.ttf") format("truetype"),
-        url("../fonts/bold/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/bold/Quicksand-Bold.woff") format("woff"),
-        url("../fonts/bold/Quicksand-Bold.woff2") format("woff2"),
-        url("../fonts/bold/Quicksand-Bold.svg#svgFontName") format("svg");
+	src: url("../../fonts/bold/Quicksand-Bold.eot");
+	src: url("../../fonts/bold/Quicksand-Bold.ttf") format("truetype"),
+        url("../../fonts/bold/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../../fonts/bold/Quicksand-Bold.woff") format("woff"),
+        url("../../fonts/bold/Quicksand-Bold.woff2") format("woff2"),
+        url("../../fonts/bold/Quicksand-Bold.svg#svgFontName") format("svg");
 }
 
 .bolded-text{
@@ -27,7 +27,7 @@
 body{
     --webkit-font-smoothing: antialiased;
     font-family: "Quicksand", "Sans-Serif";
-    background: url("../img/galaxy.jpeg") no-repeat 0px 0px;
+    background: url("../../img/galaxy.jpeg") no-repeat 0px 0px;
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -53,6 +53,7 @@ body{
 }
 
 .nav{
+    color: white;
     margin-top: 2.5%;
     width: 30%;
     padding-bottom: 2%;
