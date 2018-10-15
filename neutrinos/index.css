@@ -70,19 +70,20 @@ body{
     width: auto;
     margin-left: -10%;
     text-align: left;
+}
+
+.links *, .nav-items *:hover{
+    color: white;
+    font-style: none;
     transition: color 0.175s ease-in;
 }
 
-.nav-items > div > li:hover, .nav-items > li:hover{
+.links *:hover, .nav-items *:hover{
     color: #ffdead;
 }
 
 .links > li{
     line-height: 2em;
-}
-
-.links > a{
-    color: white;
 }
 
 .content{
