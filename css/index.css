@@ -8,6 +8,7 @@
         url("../fonts/regular/Quicksand-Regular.woff2") format("woff2"),
         url("../fonts/regular/Quicksand-Regular.svg#svgFontName") format("svg");
 }
+
 .blur {
     width:120%;
     height:120%;
