@@ -1,0 +1,90 @@
+/* Font: Quicksand */
+@font-face{
+	font-family: "Quicksand";
+	src: url("fonts/regular/Quicksand-Regular.eot");
+	src: url("fonts/regular/Quicksand-Regular.ttf") format("truetype"),
+        url("fonts/regular/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
+        url("fonts/regular/Quicksand-Regular.woff") format("woff"),
+        url("fonts/regular/Quicksand-Regular.woff2") format("woff2"),
+        url("fonts/regular/Quicksand-Regular.svg#svgFontName") format("svg");
+}
+
+p > img {
+    float: right;
+    width: 70px;
+}
+
+li > img{
+    width: 15px;
+}
+
+@font-face{
+	font-family: "QuicksandBold";
+	src: url("fonts/bold/Quicksand-Bold.eot");
+	src: url("fonts/bold/Quicksand-Bold.ttf") format("truetype"),
+        url("fonts/bold/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/bold/Quicksand-Bold.woff") format("woff"),
+        url("fonts/bold/Quicksand-Bold.woff2") format("woff2"),
+        url("fonts/bold/Quicksand-Bold.svg#svgFontName") format("svg");
+}
+
+body{
+    --webkit-font-smoothing: antialiased;
+    font-family: "Quicksand", "Sans-Serif";
+    font-weight: normal;
+    font-style: normal;
+    pointer-events:auto;
+    background: url("school.jpeg") 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    padding: 5%;
+    background-color: rgba(255,255,255);
+    opacity: 0.7;
+    height: auto;
+    width: 60%;
+    text-align: c
+}
+
+.container > header{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+header{
+    line-height:0.7;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.link{
+    pointer-events:auto;
+    color:black;
+    transition: color 0.175s ease-in;
+}
+
+.link:hover{ color: #ffdead; }
+
+.bolded-text{
+    font-family: "QuicksandBold", "Sans-serif";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+
+.site-footer{
+    position:fixed;
+    background-color:white;
+    left:0;
+    bottom:0;
+    width:100vw;
+    text-align: center;
+}
