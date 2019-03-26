@@ -20,132 +20,30 @@
 }
 
 /* Some body styling */
-body{
+html, body{
     --webkit-font-smoothing: antialiased;
     font-family: "Quicksand", "Sans-Serif";
-    background: url("../img/anime1.png") no-repeat 0px 0px;
-    background-size: cover;
-    background-attachment: fixed;
-    pointer-events:none;
-    overflow-x: hidden;
     height:100%;
     width:100%;
+    padding: 0;
+    margin: 0;
 }
 
-/* Generic styling rules */
-.box{
-    background-color:rgba(240,248,255,0.9);
-    
-    border: 1.5px solid blue;
-    border-radius: 8px;
-    
-    padding-top: 2.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2.5%;
+a{
+    color: black;
 }
 
-.link{
-    pointer-events:auto;
-    color:black;
-}
-
-.navlink{
-    pointer-events:auto;
-    color:black;
-    transition: color 0.175s ease-in;
-}
-
-.navlink:hover{ color: #ffdead; }
-}
-
-.proj-name{
-    padding-top:2%;
-}
-
-.project{
-    margin-top:2%;
-    margin-left:2%;
-    padding-left:2.5%;
-    padding-bottom:2.5%;
-    border-left: 2px solid rgba(150,150,150,0.8);
-    border-bottom: 2px solid rgba(150,150,150,0.8);
-}
-
-.topic-title{
-    padding-bottom: 3%;
-    border-bottom: 2px solid rgba(150,150,150,0.8);
-}
-
-.bolded-text{
-    font-family: "QuicksandBold", "Sans-serif";
-    font-weight: normal;
-    font-style: normal;
-}
-
-.right{
-    float:right;
-}
-
-.left{
-    float:left;
-}
-
-/* Individual element stylings */
-.content{
-    position:absolute;
-    top:0;
-    right:0;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    min-height: 100%;
-}
-
-.main{
-    margin-top:30px;
-    display: inline-block;
-}
-
-.title{
-    line-height: 0.7;
+header{
+    line-height:0.7;
     text-align: center;
-}
-
-#github-projs{
-    max-width:50%;
-}
-
-#com-contribs{
-    max-width:28%;
-    min-width:150px;
-    vertical-align: top;
-}
-
-#competitions{
-    max-width:28%;
-    min-width:150px;
-    vertical-align: top;
+    margin-bottom:30px;
 }
 
 .site-footer{
-    position:absolute;
-    bottom:0;
-    width:89.5%;
-    background:white;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: white;
+    text-align: center;
 }
-
-#footer-text{
-    text-align:center;
-}
-
-
-
-
-
-
-
-
