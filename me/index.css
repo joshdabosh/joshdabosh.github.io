@@ -33,6 +33,36 @@ header{
     margin-bottom:30px;
 }
 
+a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffdead;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: #000;
+    
+    -webkit-transform: 0.35s;
+    transform: 0.35s;
+    
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+}
+
+a:hover:after{ 
+    width: 100%;
+}
+
 .link{
     pointer-events:auto;
     color:black;
@@ -51,10 +81,6 @@ header{
 .content{
     margin-left: 20%;
     margin-right: 20%;
-}
-
-.push{
-    height:50px;
 }
 
 .site-footer{
