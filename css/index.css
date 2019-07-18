@@ -118,7 +118,7 @@ a:hover:after{
     margin-left: 1.5em;
 }
 
-.achievements-competitions > .ac-2019 > li, .achievements-competitions > .ac-2018 > li{
+.achievements-competitions > div > li{
     margin: 0.5em 0;
 }
 
