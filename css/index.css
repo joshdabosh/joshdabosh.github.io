@@ -113,16 +113,23 @@ a:hover:after{
 }
 
 
-.rmpc-stats > *{
+.stats > *{
     list-style-type: none;
     margin-left: 1.5em;
 }
 
-.achievements-competitions > div > li{
+.thing-list > div > li, .thing-list > li{
     margin: 0.5em 0;
 }
 
 
+.thing-list{
+    padding-bottom: 0;
+}
+
+.section{
+    padding-bottom: 0;
+}
 
 
 
