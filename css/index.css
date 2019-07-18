@@ -11,7 +11,7 @@ body, html{
 
 
 .container{
-    padding: 2em;
+    padding: 3em 1em;
 }
 
 .container > .section{
@@ -113,9 +113,14 @@ a:hover:after{
 }
 
 
+.rmpc-stats > *{
+    list-style-type: none;
+    margin-left: 1.5em;
+}
 
-
-
+.achievements-competitions > .ac-2019 > li, .achievements-competitions > .ac-2018 > li{
+    margin: 0.5em 0;
+}
 
 
 
