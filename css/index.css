@@ -76,13 +76,15 @@ body, html{
 }
 
 
-a{
+a, .see-desc{
+    color: #3273dc;
+    cursor: pointer;
     position: relative;
     text-decoration: none;
 }
 
 
-a:after{
+a:after, .see-desc:after{
     content: "";
     position: absolute;
     width: 0%;
@@ -91,14 +93,14 @@ a:after{
     left: 0;
     background: #000;
     
-    -webkit-transform: 0.35s;
-    transform: 0.35s;
+    -webkit-transform: 0.5s;
+    transform: 0.5s;
     
-    -webkit-transition: 0.35s;
-    transition: 0.35s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
-a:hover:after{ 
+a:hover:after, .see-desc:hover:after{ 
     width: 100%;
 }
 
@@ -132,10 +134,9 @@ a:hover:after{
 }
 
 
-
-
-
-
+.project-text{
+    display: none;
+}
 
 
 
