@@ -14,14 +14,14 @@ function showDescription(e){
     if(e.textContent == "View description"){
 
         desc.style.display = "inline";
-        e.textContent = "Close description";
+        e.textContent = "Hide description";
         
     }
     
     else{
         
         desc.style.display="none";
-        e.textContent="View description";
+        e.textContent = "Show description";
         
     }
     
