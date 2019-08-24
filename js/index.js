@@ -11,7 +11,7 @@ function showDescription(e){
     }
     
     
-    if(e.textContent == "View description"){
+    if(e.textContent == "Show description"){
 
         desc.style.display = "inline";
         e.textContent = "Hide description";
