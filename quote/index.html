@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>joshwang.me</title>
+    
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="icons/airplane.ico" />
+    
+    <style>
+        .a {
+            color: black;
+        }
+        
+        .b {
+            color: blue;
+        }
+        
+        #error {
+            color: red;
+        }
+        
+    </style>
+</head>
+    
+<body style="padding: 10px; height: 100vh; width: 100vw; display: flex;align-items: center; justify-content: center;">
+    
+    <div class="container">
+        
+        <div class="columns is-centered has-text-centered" id="bigboi">
+            
+            <div class="column is-half">
+                <h1 class="title is-1">Sad Quote Generator</h1>
+                <h3 class="subtitle is-5">Boo hoo</h3>
+            
+                <br />
+                
+                <form>
+                    <input type="text" size="60" class="input" placeholder="Base text" id="base">
+
+                    <br /><br />
+
+                    <input type="text" size="60" class="input" placeholder="Inserted text" id="ins">
+                    
+                    <br /><br />
+                    
+                    <input type="button" class="button" onclick="generate()" value="Generate quote">
+                    
+                    <span id="error"></span>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function decode(s){
+            var arr = s.match(/.{2}/g),
+                out = "";
+            
+            arr.forEach(c => {
+                out += "<span class='"+(c.charAt(0) === '0' ? 'a' : 'b')+"'>"+c.charAt(1)+"</span>";
+            });
+            
+            return out;
+        }
+        
+        function show(){
+            var t = decode(window.location.hash.substring(1));
+            document.getElementById("bigboi").innerHTML = t;
+        }
+        
+        function e(){
+            document.getElementById("error").innerHTML = "<br /><br />Error, your inputs don't work.";
+        }
+        
+        function generate(){
+            var base = document.getElementById("base").value,
+                ins = document.getElementById("ins").value,
+                out = "",
+                foundAll = true;
+            
+            if(ins.length> base.length){
+                e();
+                return;
+            }
+            
+            [...ins].some(c => {
+                var i = base.indexOf(c);
+                
+                if (i === -1){
+                    e();
+                    foundAll = false;
+                    return;
+                }
+                
+                [...base.substring(0, i)].forEach(t => {
+                    out += "0"+c;
+                });
+                
+                out += "1"+c;
+                
+                base = base.substring(i+1);
+            });
+            
+            if (!foundAll){
+                return;
+            }
+            
+            [...base].forEach(t => {
+                out += "0"+t;
+            });
+            
+            window.location.href = window.location.href + "#" + out;
+            window.location.reload();
+        }
+        
+        if (window.location.hash){
+            show();
+        }
+    
+    </script>
+</body>
+</html>
