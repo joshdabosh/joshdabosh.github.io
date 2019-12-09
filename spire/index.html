@@ -17,6 +17,13 @@ permalink: /spire/
     
     
     <link rel="shortcut icon" type="image/x-icon" href="../icons/airplane.ico" />
+    
+    <style>
+      body{
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+    </style>
   </head>
   <body>
     <form>
@@ -37,6 +44,7 @@ permalink: /spire/
       var h = d * (Math.tan(t1) * Math.tan(t2)/(Math.tan(t1) - Math.tan(t2)) - (Math.tan(t3)*Math.tan(t4)/(Math.tan(t3)-Math.tan(t4))))
 
       document.getElementById("res").innerHTML = h;
+      document.getElementById("res").innerHtml = document.getElementById("res").innerHTML + " meters";
     }
   </script>
 </html>
