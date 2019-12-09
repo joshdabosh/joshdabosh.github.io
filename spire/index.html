@@ -39,7 +39,7 @@ permalink: /spire/
   </body>
   <script>
     function f(){
-      var t1 = parseInt(document.getElementById("a").value, 10) * Math.PI / 180, t2 = parseInt(document.getElementById("b").value, 10) * Math.PI / 180,t3 = parseInt(document.getElementById("c").value, 10) * Math.PI / 180,t4 = parseInt(document.getElementById("d").value, 10) * Math.PI / 180,d = parseInt(document.getElementById("d_").value, 10);
+      var t1 = parseFloat(document.getElementById("a").value, 10) * Math.PI / 180, t2 = parseFloat(document.getElementById("b").value, 10) * Math.PI / 180,t3 = parseFloat(document.getElementById("c").value, 10) * Math.PI / 180,t4 = parseFloat(document.getElementById("d").value, 10) * Math.PI / 180,d = parseFloat(document.getElementById("d_").value, 10);
 
       var h = d * (Math.tan(t1) * Math.tan(t2)/(Math.tan(t1) - Math.tan(t2)) - (Math.tan(t3)*Math.tan(t4)/(Math.tan(t3)-Math.tan(t4))))
 
