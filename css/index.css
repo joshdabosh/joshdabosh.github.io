@@ -11,7 +11,7 @@ body, html{
 
 
 .container{
-    padding: 3em 1em;
+    padding: 3em 0;
 }
 
 .container > .section{

@@ -4,10 +4,7 @@ function showDescription(e){
     var desc;
     
     for(var i=0; i < parentElement.childNodes.length; i++){
-        if(parentElement.childNodes[i].className == "project-text"){
-            desc = parentElement.childNodes[i];
-            break;
-        }
+        if(parentElement.childNodes[i].className == "project-text"){desc = parentElement.childNodes[i]; break;}
     }
     
     
@@ -20,7 +17,7 @@ function showDescription(e){
     
     else{
         
-        desc.style.display="none";
+        desc.style.display = "none";
         e.textContent = "Show description";
         
     }
