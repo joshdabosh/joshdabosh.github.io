@@ -30,12 +30,6 @@ body, html{
 }
 
 
-.subheader{
-	cursor:pointer;
-	color: #3273dc;
-	font-weight:bold;
-}
-
 .wrap{
     height:100%;
     width:100%;
@@ -93,7 +87,7 @@ body, html{
 }
 
 
-a, .see-desc{
+a, .see-desc, .subheader{
     color: #3273dc;
     cursor: pointer;
     position: relative;
@@ -101,7 +95,7 @@ a, .see-desc{
 }
 
 
-a:after, .see-desc:after{
+a:after, .see-desc:after, .subheader:after{
     content: "";
     position: absolute;
     width: 0%;
@@ -117,13 +111,8 @@ a:after, .see-desc:after{
     transition: 0.5s;
 }
 
-a:hover:after, .see-desc:hover:after{ 
+a:hover:after, .see-desc:hover:after, .subheader:hover:after{ 
     width: 100%;
-}
-
-
-.projects{
-    
 }
 
 .projects > * {
