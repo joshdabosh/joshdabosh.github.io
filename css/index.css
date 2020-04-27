@@ -95,7 +95,7 @@ a, .see-desc, .subheader{
 }
 
 
-a:after, .see-desc:after, .subheader:after{
+a:after, .see-desc:after{
     content: "";
     position: absolute;
     width: 0%;
@@ -111,7 +111,7 @@ a:after, .see-desc:after, .subheader:after{
     transition: 0.5s;
 }
 
-a:hover:after, .see-desc:hover:after, .subheader:hover:after{ 
+a:hover:after, .see-desc:hover:after{ 
     width: 100%;
 }
 
