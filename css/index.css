@@ -69,22 +69,6 @@ body, html{
     border-left: 1px solid grey;
 }
 
-.firstname{
-    float: left;
-}
-
-.firstname > .subtitle{
-    float: right;
-}
-
-.lastname{
-    float: right;
-}
-
-.lastname > .subtitle{
-    float: left;
-}
-
 
 a, .see-desc, .subheader{
     color: #3273dc;
@@ -147,4 +131,3 @@ a:hover:after, .see-desc:hover:after{
 .job-desc{
     margin-left: 1.5em;
 }
-
