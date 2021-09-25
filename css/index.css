@@ -7,9 +7,6 @@ body, html{
 
 .container{
     text-align: left;
-}
-
-.container{
     padding: 1em 3em 0 3em;
 }
 
@@ -29,54 +26,12 @@ body, html{
 	padding-top:0;
 }
 
-.wrap{
-    height:100%;
-    width:100%;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-
-.content{
-    margin: auto;
-    position: relative;
-    width: auto;
-}
-
-
-.content > *{
-    margin: 0 0.8em;
-}
-
-.subtitle.frontpage{
-    list-style-type: none;
-    
-    width: 100%;
-    margin-left: 0;
-}
-
-.subtitle.frontpage li{
-    display: inline;
-}
-
-.separator{
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    border-left: 1px solid grey;
-}
-
-
 a, .see-desc, .subheader{
     color: #3273dc;
     cursor: pointer;
     position: relative;
     text-decoration: none;
 }
-
 
 a:after, .see-desc:after{
     content: "";
@@ -97,38 +52,3 @@ a:after, .see-desc:after{
 a:hover:after, .see-desc:hover:after{ 
     width: 100%;
 }
-
-.projects > * {
-    list-style-type: none;
-    margin-top: 2em;
-}
-
-
-.stats > *{
-    list-style-type:disc;
-    margin-left: 1.5em;
-}
-
-.thing-list > div > li, .thing-list > li{
-    margin: 0.5em 0;
-}
-
-
-.thing-list{
-    padding-bottom: 0;
-}
-
-.section{
-    padding-bottom: 0;
-}
-
-
-.project-text{
-    display: none;
-}
-
-
-.job-desc{
-    margin-left: 1.5em;
-}
-
