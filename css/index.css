@@ -70,8 +70,8 @@ a:hover:after, .see-desc:hover:after{
 
 .pfp{
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
 }
 
 @keyframes pfpfade{
